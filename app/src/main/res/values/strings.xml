@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DACN</string>
+
+    <string name="facebook_app_id">867808343421898</string>
+    <string name="fb_login_protocol_scheme">fb867808343421898</string>
+
+</resources>

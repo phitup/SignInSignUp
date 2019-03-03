@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.StartActivity"
+    android:orientation="vertical"
+    android:background="@drawable/background_start"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:weightSum="10"
+    android:id="@+id/startlayout">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center">
+        <ImageView
+            android:layout_marginTop="10dp"
+            android:src="@drawable/start_banner"
+            android:layout_width="350dp"
+            android:layout_height="200dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="4"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/textviewStartRegister"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="right"
+            android:textStyle="italic"
+            android:textSize="15sp"
+            android:textColor="#FFFFFF"
+            android:text="Register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <com.facebook.login.widget.LoginButton
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:textSize="20sp"
+            android:background="@drawable/background_fb_login"
+            />
+
+        <Button
+            android:id="@+id/buttonStartPhoneNumber"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/background_phone_login"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Sign In With Phone"
+            android:textAllCaps="false"
+            android:drawableLeft="@drawable/icon_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+        <Button
+            android:id="@+id/buttonStartSignUp"
+            android:layout_marginTop="20dp"
+            android:padding="20dp"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/start_button"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="Sign In"
+            android:textAllCaps="false"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp">
+        <TextView
+            android:id="@+id/textviewStartTerms"
+            android:textStyle="italic"
+            android:gravity="center"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            android:text="By signing up, i agree to Airbob's Terms of Service, Privacy Policy, Guest Refund Policy, and Host Guarantee Terms"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</LinearLayout>

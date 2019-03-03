@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activities.SignInWithPhoneActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        app:titleTextColor="#000000"
+        app:title="Back"
+        android:id="@+id/toolbarSignInWithPHone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:weightSum="10"
+            android:orientation="vertical"
+            android:id="@+id/LayoutSignInWithPhone">
+
+
+
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:orientation="horizontal">
+            <ImageView
+                android:src="@drawable/vietnam_flag"
+                android:adjustViewBounds="true"
+                android:layout_marginRight="20dp"
+                android:layout_width="70dp"
+                android:layout_height="60dp" />
+            <TextView
+                android:textSize="30sp"
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <EditText
+                android:id="@+id/edittextNumberPhone"
+                android:textSize="23sp"
+                android:inputType="phone"
+                android:focusable="true"
+                android:hint="Number Phone"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_weight="9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <Button
+                android:id="@+id/buttonSignInWithPhone"
+                android:background="#fa4765"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:text="Send Code"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:text="By tapping 'Verify Phone Number' , an SMS may be sent. Message and data rates may apply"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:id="@+id/LayoutVerifyWithPhone">
+            <EditText
+                android:id="@+id/edittextVerifyCode"
+                android:inputType="number"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:hint="Code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/buttonVerifyWithPhone"
+                android:background="#fa4765"
+                android:textColor="#FFFFFF"
+                android:textSize="15sp"
+                android:text="Verify Phone Number"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginLeft="30dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </FrameLayout>
+
+
+
+</LinearLayout>
